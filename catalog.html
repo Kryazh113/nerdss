@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия Нёрдс</title>
+    <link rel="styleseet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/fav/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/fav/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+  </head>
+  <body>
+
+
+    <header>
+      <a href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Студия</a>
+          </li>
+          <li>
+            <a href="blank.html">Клиенты</a>
+          </li>
+          <li>
+            <a>Магазин</a>
+          </li>
+          <li>
+            <a href="blank.html">Контакты</a>
+          </li>
+        </ul>
+        <a href="blank.html">Корзина</a>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+
+
+
+    <main>
+        <section>
+            <h2>Фильтр товаров</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <input id="price" name="price" type="range" min="0" max="150000">
+                    <p>от <span>0</span> до <span>150000</span></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <input type="radio" name="net" value="adaptive" id="form-adaptive" checked>
+                    <label for="form-adaptive">Адаптивная</label><br>
+                    <input type="radio" name="net" value="fixed" id="form-fixed">
+                    <label for="form-fixed">Фиксированная</label><br>
+                    <input type="radio" name="net" value="rubber" id="form-rubber">
+                    <label for="form-rubber">Резиновая</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <input type="checkbox" name="slider" id="form-slider" checked>
+                    <label for="form-slider">Слайдер</label><br>
+                    <input type="checkbox" name="advantage-block" id="form-advantage-block">
+                    <label for="form-advantage-block">Блок преимуществ</label><br>
+                    <input type="checkbox" name="news" id="form-news" checked>
+                    <label for="form-news">Новости</label><br>
+                    <input type="checkbox" name="gallery" id="form-gallery">
+                    <label for="form-gallery">Галерея</label><br>
+                    <input type="checkbox" name="basket" id="form-basket">
+                    <label for="form-basket">Корзина</label>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        </section>
+
+
+
+        <section>
+          <h2>Сортировка</h2>
+          <h3>Сортировать:</h3>
+          <ul>
+            <li>
+              <button type="button">По цене</button>
+            </li>
+            <li>
+              <button type="button">По типу</button>
+            </li>
+            <li>
+              <button type="button">По названию</button>
+            </li>
+            <li>
+              <button type="button">Стрелка вниз</button>
+            </li>
+            <li>
+              <button type="button">стрелка вверх</button>
+            </li>
+          </ul>
+        </section>
+
+
+
+        <section>
+          <h2>Каталог товаров</h2>
+          <ul>
+            <li>
+              <div><!--Шапка карточки товара--></div>
+              <img src="img/card_sedona.jpg" width="358" height="578" alt="Карточка товара Sedona">
+              <div>
+                <h3>Sedona</h3>
+                <p>Информационный сайт<br> для туристов</p>
+                <button type="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li>
+              <div><!--Шапка карточки товара--></div>
+              <img src="img/card_pink.jpg" width="358" height="578" alt="Карточка товара Pink">
+              <div>
+                <h3>Pink App</h3>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <button type="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li>
+              <div><!--Шапка карточки товара--></div>
+              <img src="img/card_borodinski.jpg" width="358" height="578" alt="Карточка товара BarberShop">
+              <div>
+                <h3>Barbershop</h3>
+                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                <button type="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li>
+              <div><!--Шапка карточки товара--></div>
+              <img src="img/card_mishka.jpg" width="358" height="578" alt="Карточка товара Mishka">
+              <div>
+                <h3>Miska</h3>
+                <p>Интернет-магазин<br> вязаных игрушек</p>
+                <button type="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li>
+              <div><!--Шапка карточки товара--></div>
+              <img src="img/card_aplus.jpg" width="358" height="578" alt="Карточка товара A Plus">
+              <div>
+                <h3>A Plus</h3>
+                <p>Лендинг курсов повышения<br> квалификации</p>
+                <button type="button">9 900 ₽</button>
+              </div>
+            </li>
+            <li>
+              <div><!--Шапка карточки товара--></div>
+              <img src="img/card_kvast.jpg" width="358" height="578" alt="Карточка товара Кваст">
+              <div>
+                <h3>Кваст</h3>
+                <p>Промо-сайт производителя<br> крафтового кваса</p>
+                <button type="button">9 900 ₽</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+
+
+        <div>
+          <h2>Пагинация</h2>
+          <ul>
+            <li>
+              <button type="button">1</button>
+            </li>
+            <li>
+              <button type="button">2</button>
+            </li>
+            <li>
+              <button type="button">3</button>
+            </li>
+            <li>
+              <button type="button">Следущая</button>
+            </li>
+          </ul>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <section>
+          <h2>Контакты</h2>
+          <!--Тут будет карта-->
+          <div>
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+            <p>
+              <a href="tel:+78005558628">+7 800 555-86-28</a>
+            </p>
+            <button type="button">Напишите нам</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Ссылки на соцсети</h2>
+          <ul>
+            <li>
+              <div>
+                <a href="#">
+                  <img src="img/icons/icon-vk.png" width="26" height="15" alt="">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#">
+                  <img src="img/icons/icon_fb.png" width="12" height="22" alt="">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#">
+                  <img src="img/icons/icon_insta.png" width="21" height="21" alt="">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Слоган</h2>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальный сетей</p>
+        </section>
+      </footer>
+
+
+
+      <section>
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="form-name">Ваше имя:</label>
+          <label for="form-email">Ваш email:</label><br>
+          <input type="text" name="name" id="form-name" placeholder="Имя Фамилия">
+
+          <input type="text" name="email" id="form-email" placeholder="email@example.com"><br>
+          <label for="form-comment">Текст письма:</label><br>
+          <textarea id="form-comment" placeholder="В свободной форме"></textarea><br>
+          <input type="submit" value="Отправить">
+        </form>
+        <button type="button">Закрыть</button>
+      </section>

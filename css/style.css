@@ -1,0 +1,248 @@
+/* Variables*/
+
+:root{
+  --basic-black: #000000;
+  --basic-dark: #283136;
+  --modal-map-text: #666666;
+  --modal-placeholder-text: #444444;
+  --radio-gray: #4d4d4d;
+  --basic-gray: #eeeeee;
+  --medium-gray: #dfdfdf;
+  --dark-gray: #d5d5d5;
+  --slider-gray: #c1c1c1;
+  --social-gray: #e1e1e1;
+  --basic-white: #ffffff;
+  --basic-red: #fb565a;
+  --medium-red: #e74246;
+  --dark-red: #d7373b;
+  --basic-green: #00ca74;
+  --medium-green: #00bc6c;
+  --dark-green: #00aa62;
+  --basic-yellow: #efc849;
+  --medium-yellow: #eab534;
+  --dark-yellow: #e5a722;
+}
+
+/*Global*/
+
+body{
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-dark);
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Main navigation*/
+
+.main-header{
+  background-color: var(--basic-gray);
+}
+
+.main-navigation{
+  font-size: inherit;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a{
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover{
+  color: var(--basic-red);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus{
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a:not([href]),
+.user-navigation a:not([href]){
+  border-bottom: 2px solid var(--basic-red);
+}
+
+/*Features*/
+
+.features h3{
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+/*Services*/
+
+.services-list{
+  list-style: none;
+}
+
+.services-item h3{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.red-button{
+  display: table-cell;
+  width: 160px;
+  height: 50px;
+  color: var(--basic-white);
+  line-height: 18px;
+  background-color: var(--basic-red);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.red-button:hover{
+  background-color: var(--medium-red);
+}
+
+.red-button:focus{
+  background-color: var(--dark-red);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*Index colunms*/
+
+.intro{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.option{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.statistic-table caption{
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.statistic-table th{
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+th .percent{
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.statistic-table td{
+  line-height: 18px;
+}
+
+/*Button*/
+
+.button{
+  font-size: inherit;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+/*Clients*/
+
+.clients-list{
+  list-style: none;
+}
+
+.clients-item a{
+  opacity: 0.2;
+}
+
+.clients-item a:hover{
+  opacity: 1;
+}
+
+.clients-item a:focus{
+  opacity: 0.1;
+}
+
+/*footer*/
+
+.map-contacts h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.map-contacts p{
+  line-height: 18px;
+  color: var(--modal-map-text);
+}
+
+.contacts-phone{
+  color: var(--modal-map-text);
+}
+
+/*Slogan*/
+
+.slogan p{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.slogan .discount{
+  line-height: 22px;
+  color: var(--modal-placeholder-text);
+}
+
+/*Modal*/
+
+.modal h2{
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+  color: var(--basic-black);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.login-form input[type="email"],
+.login-form input[type="text"],
+.login-form input[type="password"]{
+  font:  inherit;
+  color: var(--basic-black);
+  line-height: 18px;
+}
