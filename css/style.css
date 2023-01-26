@@ -208,7 +208,9 @@ img{
   padding: 0;
  }
 
-
+.index-page{
+  margin-bottom: 80px;
+}
 
 /*Services*/
 
@@ -407,6 +409,10 @@ th .percent{
   margin-bottom: 68px;
 }
 
+.main-footer-catalog{
+  margin-bottom: 76px;
+}
+
 .footer-contacts{ /*От карты до девиза*/
   margin-bottom: 68px;
 
@@ -416,12 +422,18 @@ th .percent{
 
 .map-contacts{
   width: 319px;
-  height: 308px;
+  min-height: 308px;
   background-color: #00aa62;
+  display: flex;
+  flex-direction: column;
 
 }
 
 .map-contacts h3{
+  padding: 0;
+  margin-left: 50px;
+  margin-top: 49px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -430,15 +442,25 @@ th .percent{
 }
 
 .map-contacts p{
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  margin-bottom: 18px;
   line-height: 18px;
   color: var(--modal-map-text);
 }
 
 .contacts-phone{
   color: var(--modal-map-text);
+  line-height: 18px;
+  margin-left: 50px;
+  margin-bottom: 37px;
 }
 
 .modal-button{
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
   width: 219px;
   height: 50px;
 }
@@ -449,7 +471,6 @@ th .percent{
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 140px;
-  margin-bottom: 68px;
 }
 
 .social-list{
@@ -466,14 +487,37 @@ th .percent{
   height: 81px;
   background-color: var(--social-gray);
   border-radius: 50%;
-
 }
 
-.social-item:hover{
+.social-item .social-button{
+  display: block;
+  width: 26px;
+  height: 15px;
+  padding: 33px 27px;
+  border-radius: 50%;
+}
+
+.social-item:nth-child(2) .social-button{
+  display: block;
+  width: 12px;
+  height: 22px;
+  padding: 31px 34px 28px 35px;
+  border-radius: 50%;
+}
+
+.social-item:nth-child(3) .social-button{
+  display: block;
+  width: 21px;
+  height: 21px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.social-item a:hover{
   background-color: var(--medium-red);
 }
 
-.social-item:focus{
+.social-item a:focus{
   background-color: var(--dark-red);
 }
 
@@ -482,14 +526,14 @@ th .percent{
 /*Slogan*/
 
 .slogan p{
+  padding: 0;
+  margin: 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   color: var(--basic-black);
   margin-top: 7px;
   margin-bottom: 10px;
-  padding: 0;
-  margin: 0;
 }
 
 .slogan .discount{
@@ -935,9 +979,3 @@ opacity: 0.3;
 }
 
 
-/*main-footer-catalog*/
-
-
-.main-footer-catalog{
-  margin-bottom: 76px;
-}
