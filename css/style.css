@@ -544,21 +544,74 @@ th .percent{
   padding: 0;
 }
 
+
 /*Modal*/
 
+
 .modal{
-  display: none;
+
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+
   width: 960px;
-  height: 590px;
+  min-height: 590px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.modal h2{
+.not-active{
+  display: none;
+}
+
+.modal h3{
+  order: 1;
+
   font-size: 45px;
   line-height: 53px;
   font-weight: 700;
   color: var(--basic-black);
+  max-width: 738px;
+  margin-top: 63px;
+  margin-left: 100px;
+  margin-bottom: 37px;
 
+}
+
+.login-form{
+  order: 2;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 84px;
+  height: 353px;
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-template-rows: 77px 145px 50px;
+  column-gap: 40px;
+  row-gap: 34px;
+}
+
+.login-form p{
+  margin: 0;
+  padding: 0;
+}
+
+.login-form .name{
+  grid-column: 1/2;
+}
+
+.login-form .email{
+  grid-column: 2/3;
+}
+
+.login-form .comment{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.login-form .button{
+  grid-column: 1/2;
+  grid-row: -2/-1;
 }
 
 .login-form label{
@@ -570,15 +623,24 @@ th .percent{
 
 .login-form input[type="email"],
 .login-form input[type="text"],
-.login-form input[type="password"],
 .login-form .login-message{
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  padding-right: 14px;
   font:  inherit;
   color: var(--modal-placeholder-text);
   line-height: 18px;
   border: 2px solid var(--border-gray);
 }
 
-input::-webkit-input-placeholder{
+.login-form .login-message{
+  height: 118px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
   color: var(--modal-placeholder-text);
   opacity: 0.5;
 }
@@ -589,7 +651,6 @@ input:focus::-webkit-input-placeholder{
 
 .login-form input[type="email"]:hover,
 .login-form input[type="text"]:hover,
-.login-form input[type="password"]:hover,
 .login-form .login-message:hover{
   border: 2px solid var(--form-focus);
   color: var(--modal-placeholder-text);
@@ -597,7 +658,6 @@ input:focus::-webkit-input-placeholder{
 
 .login-form input[type="email"]:focus,
 .login-form input[type="text"]:focus,
-.login-form input[type="password"]:focus,
 .login-form .login-message:focus{
   border: 2px solid var(--basic-black);
   color: var(--basic-black);
@@ -605,18 +665,28 @@ input:focus::-webkit-input-placeholder{
 
 .login-form input[type="email"]:invalid,
 .login-form input[type="text"]:invalid,
-.login-form input[type="password"]:invalid,
 .login-form .login-message:invalid{
   border: 2px solid var(--medium-red);
   color: var(--medium-red);
 }
 
 .login-form .button{
+  padding: 0;
+  margin: 0;
+  margin-top: 13px;
   width: 259px;
   height: 50px;
 }
 
 .modal-close{
+  order: 1;
+
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  margin-left:auto;
+  margin-top: 78px;
+  margin-right: 90px;
   border: none;
   background-color: var(--basic-white);
   opacity: 0.3;
