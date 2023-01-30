@@ -96,6 +96,32 @@ img{
   height: auto;
 }
 
+
+
+/*Button*/
+
+
+.button{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+.button:hover{
+  background-color: var(--medium-red);
+}
+
+.button:focus{
+  background-color: var(--dark-red);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /*Main-header*/
 
 .main-header h1{
@@ -330,12 +356,25 @@ img{
   padding: 0;
 }
 
+.services-item img{
+  margin-bottom: 25px;
+}
+
 .services-item h3{
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.services-item p{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .order-red-button{
@@ -355,7 +394,7 @@ img{
 
 .order-red-button:focus{
   background-color: var(--dark-red);
-  color: rgba(255, 255, 255, 0.3);
+
 }
 
 .services-item .order-green-button{
@@ -375,7 +414,6 @@ img{
 
 .services-item .order-green-button:focus{
   background-color: var(--dark-green);
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .services-item .order-yellow-button{
@@ -395,7 +433,6 @@ img{
 
 .services-item .order-yellow-button:focus{
   background-color: var(--dark-yellow);
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .line{
@@ -408,11 +445,17 @@ img{
 
 /*Index colunms*/
 
+
 .index-columns{
-  display: grid;
-  grid-template-columns: 1fr max-content;
+  width: 1174px;
+  display: flex;
+  justify-content: space-between;
+
   margin-bottom: 73px;
 }
+
+
+/*About*/
 
 
 .intro{
@@ -420,72 +463,132 @@ img{
   line-height: 45px;
   font-weight: 500;
   color: var(--basic-black);
+
+  margin: 0;
+  padding: 0;
+  margin-top: 34px;
+  margin-bottom: 32px;
+}
+
+.privelege{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
 }
 
 .option{
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .option-list{
-margin-bottom: 0;
+  margin: 0;
 }
 
-.statistic-table caption{
-  text-transform: uppercase;
-  font-weight: 700;
+.option-item:not(:last-child){
+  margin-bottom: 25px;
+}
+
+
+
+/*Statistic*/
+
+
+.statistic{
+  width: 360px;
+  margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.statistic img{
+  width: 360px;
+  height: 208px;
+  margin-bottom: 37px;
+}
+
+.statistic-table{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.statistic-table p{
+  margin: 0;
+  margin-bottom: 31px;
+  grid-column: 1/-1;
   text-align: center;
+  font-weight: 700;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
-.statistic-table th{
+.statistic-table dd{
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
   color: var(--basic-black);
+  margin: 0;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
-th .percent{
+.statistic-table .percent{
   font-size: 26px;
   line-height: 40px;
+  font-weight: 700;
+  color: var(--basic-black);
 }
 
-.statistic-table td{
+.statistic-table dt{
   line-height: 18px;
 }
 
-/*Button*/
-
-.button{
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  border: none;
-}
-
-.button:hover{
-  background-color: var(--medium-red);
-}
-
-.button:focus{
-  background-color: var(--dark-red);
-}
 
 /*Clients*/
 
+
 .clients-list{
+  box-sizing: border-box;
+  border-top: 2px solid var(--basic-gray);
+  border-bottom: 2px solid var(--basic-gray);
+  min-height: 184px;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-around;
+
+/*
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
+  column-gap: 40px;
+*/
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
+
+/*
+.clients-item:not(:nth-child(4n))::after{
+  content: "";
+
+  display: inline-block;
+
+  margin-left: 30px;
+  border-right: 2px solid var(--basic-gray);
+  height: 52px;
+}
+*/
+
 
 .clients-item a{
   opacity: 0.2;
@@ -966,6 +1069,7 @@ opacity: 0.3;
   border: none;
   text-align: center;
   vertical-align: middle;
+  border-radius: 3px;
 }
 
 .filter-button:hover{
@@ -1120,7 +1224,7 @@ opacity: 0.3;
   background-color: var(--basic-gray);
   text-transform: uppercase;
   color: var(--basic-black);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .last .pagination-button{
