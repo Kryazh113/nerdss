@@ -519,10 +519,9 @@ img{
 
 }
 
-.statistic-table p{
+.table-caption{
   margin: 0;
   margin-bottom: 31px;
-  grid-column: 1/-1;
   text-align: center;
   font-weight: 700;
   color: var(--basic-black);
@@ -537,6 +536,8 @@ img{
   margin: 0;
   text-align: left;
   margin-bottom: 10px;
+  grid-row: 1;
+
 }
 
 .statistic-table .percent{
@@ -548,6 +549,7 @@ img{
 
 .statistic-table dt{
   line-height: 18px;
+  grid-row: 2;
 }
 
 
