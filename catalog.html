@@ -48,6 +48,9 @@
         <h2>Сортировка</h2>
         <h3>Стоимость:</h3>
         <h3>Сортировать:</h3>
+
+        <div class="sort-list-wrapper">
+
         <ul class="sort-list">
           <li class="sort-item">
             <button type="button">По цене</button>
@@ -58,17 +61,22 @@
           <li class="sort-item">
             <button type="button">По названию</button>
           </li>
-          <li class="sort-item">
+        </ul>
+
+        <ul class="up-down">
+          <li class="sort-item sort-item-down">
             <button type="button">
               <img src="img/icons/icon_down_dir.svg" width="11" height="10" alt="">
             </button>
           </li>
-          <li class="sort-item">
+          <li class="sort-item sort-item-up">
             <button type="button">
               <img src="img/icons/icon_up_dir.svg" width="11" height="10" alt="">
             </button>
           </li>
         </ul>
+
+        </div>
       </section>
 
 
@@ -89,25 +97,41 @@
           </fieldset>
           <fieldset class="form-net">
             <legend>Сетка:</legend>
-            <input type="radio" name="net" value="adaptive" id="form-adaptive" checked>
-            <label for="form-adaptive">Адаптивная</label><br>
-            <input type="radio" name="net" value="fixed" id="form-fixed">
-            <label for="form-fixed">Фиксированная</label><br>
-            <input type="radio" name="net" value="rubber" id="form-rubber">
-            <label for="form-rubber">Резиновая</label>
+            <p class="filter-item">
+              <input type="radio" name="net" value="adaptive" id="form-adaptive" checked>
+              <label for="form-adaptive">Адаптивная</label><br>
+            </p>
+            <p class="filter-item">
+              <input type="radio" name="net" value="fixed" id="form-fixed">
+              <label for="form-fixed">Фиксированная</label><br>
+            </p>
+            <p class="filter-item">
+              <input type="radio" name="net" value="rubber" id="form-rubber">
+              <label for="form-rubber">Резиновая</label>
+            </p>
           </fieldset>
           <fieldset class="form-peculiarities">
             <legend>Особенности:</legend>
-            <input type="checkbox" name="slider" id="form-slider" checked>
-            <label for="form-slider">Слайдер</label><br>
-            <input type="checkbox" name="advantage-block" id="form-advantage-block">
-            <label for="form-advantage-block">Блок преимуществ</label><br>
-            <input type="checkbox" name="news" id="form-news" checked>
-            <label for="form-news">Новости</label><br>
-            <input type="checkbox" name="gallery" id="form-gallery">
-            <label for="form-gallery">Галерея</label><br>
-            <input type="checkbox" name="basket" id="form-basket">
-            <label for="form-basket">Корзина</label>
+            <p class="filter-item">
+              <input type="checkbox" name="slider" id="form-slider" checked>
+              <label for="form-slider">Слайдер</label><br>
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="advantage-block" id="form-advantage-block">
+              <label for="form-advantage-block">Блок преимуществ</label><br>
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="news" id="form-news" checked>
+              <label for="form-news">Новости</label><br>
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="gallery" id="form-gallery">
+              <label for="form-gallery">Галерея</label><br>
+            </p>
+            <p class="filter-item">
+              <input type="checkbox" name="basket" id="form-basket">
+              <label for="form-basket">Корзина</label>
+            </p>
           </fieldset>
           <button class="filter-button" type="submit"><span>Показать</span></button>
         </form>
@@ -124,7 +148,7 @@
               <div class="modal-price">
                   <a href="#">Sedona</a>
                 <p>Информационный сайт<br> для туристов</p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button-price" type="button">9 900 ₽</button>
               </div>
             </li>
             <li class="catalog-item">
@@ -133,7 +157,7 @@
               <div class="modal-price">
                   <a href="#">Pink App</a>
                 <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button-price" type="button">9 900 ₽</button>
               </div>
             </li>
             <li class="catalog-item">
@@ -142,7 +166,7 @@
               <div class="modal-price">
                   <a href="#">Barbershop</a>
                 <p>Сайт салона красоты.<br> Для мужчин, да.</p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button-price" type="button">9 900 ₽</button>
               </div>
             </li>
             <li class="catalog-item">
@@ -151,7 +175,7 @@
               <div class="modal-price">
                   <a href="#">Miska</a>
                 <p>Интернет-магазин<br> вязаных игрушек</p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button-price" type="button">9 900 ₽</button>
               </div>
             </li>
             <li class="catalog-item">
@@ -160,7 +184,7 @@
               <div class="modal-price">
                   <a href="#">A Plus</a>
                 <p>Лендинг курсов повышения<br> квалификации</p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button-price" type="button">9 900 ₽</button>
               </div>
             </li>
             <li class="catalog-item">
@@ -169,7 +193,7 @@
               <div class="modal-price">
                   <a href="#">Кваст</a>
                 <p>Промо-сайт производителя<br> крафтового кваса</p>
-                <button class="button" type="button">9 900 ₽</button>
+                <button class="button-price" type="button">9 900 ₽</button>
               </div>
             </li>
           </ul>
@@ -248,19 +272,20 @@
 
 
     <section class="modal">
-      <h2>Напишите нам</h2>
+      <h2>Форма обратной связи</h2>
+      <h3>Напишите нам</h3>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="form-name">Ваше имя:</label>
+        <p class="name">
+          <label for="form-name">Ваше имя:</label><br>
           <input class="login-name" type="text" name="name" id="form-name" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="email">
           <label for="form-email">Ваш email:</label><br>
           <input class="login-email" type="email" name="email" id="form-email" placeholder="email@example.com"><br>
-        </p>
-        <p>
+        </p><br>
+        <p class="comment">
           <label for="form-comment">Текст письма:</label><br>
-          <textarea class="login-message" id="form-comment" placeholder="В свободной форме"></textarea><br>
+          <textarea class="login-message" id="form-comment" rows="4" placeholder="В свободной форме"></textarea><br>
         </p>
         <button class="button" type="submit" value="Отправить">Отправить</button>
       </form>
@@ -269,6 +294,6 @@
       </button>
     </section>
 
-
+    <script src="js/script.js"></script>
   </body>
 </html>
