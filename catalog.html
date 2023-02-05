@@ -45,7 +45,7 @@
 
     <main class="container page-catalog">
       <section class="sort">
-        <h2>Сортировка</h2>
+        <h2 class="visually-hidden">Сортировка</h2>
         <h3>Стоимость:</h3>
         <h3>Сортировать:</h3>
 
@@ -83,7 +83,7 @@
 
 
       <section class="filter">
-        <h2>Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru/" oninput="result.value=parseInt(price.value)">
           <fieldset class="form-price-range">
             <div class="range">
@@ -140,7 +140,7 @@
 
 
       <section class="catalog">
-          <h2>Каталог товаров</h2>
+          <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <img class="card-browser" src="img/icons/browser.svg" width="360" height="40" alt="">
@@ -202,7 +202,7 @@
 
 
       <div class="pagination">
-          <h2 class="invisible">Пагинация</h2>
+          <h2 class="visually-hidden">Пагинация</h2>
           <ul class="pagination-list">
             <li class="pagination-item">
               <button class="pagination-button active" type="button"><span>1</span></button>
@@ -224,15 +224,19 @@
 
     <footer class="main-footer main-footer-catalog">
         <section class="footer-contacts">
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <!--Тут будет карта-->
         <div class="map-contacts">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург<br></p>
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28
-          </a>
-
-          <button class="button modal-button" type="button">Напишите нам</button>
+          <div class="map-contacts-wrapper">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург<br>
+              <span class="contacts-phone-link">
+                <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28
+                </a>
+              </span>
+          </p>
+            <button class="button modal-button" type="button">Напишите нам</button>
+          </div>
         </div>
         </section>
 
@@ -240,28 +244,28 @@
 
         <div class="footer-wrapper">
           <section class="footer-social">
-          <h2>Ссылки на соцсети</h2>
+          <h2 class="visually-hidden">Ссылки на соцсети</h2>
           <ul class="social-list">
             <li class="social-item">
                 <a class="social-button" href="#">
-                  <img src="img/icons/icon-vk.png" width="26" height="15" alt="">
+                  <img src="img/icons/icon_vk.svg" width="26" height="15" alt="">
                 </a>
             </li>
             <li class="social-item">
                 <a class="social-button" href="#">
-                  <img src="img/icons/icon_fb.png" width="12" height="22" alt="">
+                  <img src="img/icons/icon_fb.svg" width="12" height="22" alt="">
                 </a>
             </li>
             <li class="social-item">
               <a class="social-button" href="#">
-                  <img src="img/icons/icon_insta.png" width="21" height="21" alt="">
+                  <img src="img/icons/icon_insta.svg" width="21" height="21" alt="">
                 </a>
             </li>
          </ul>
          </section>
 
           <section class="slogan">
-          <h2>Слоган</h2>
+          <h2 class="visually-hidden">Слоган</h2>
           <p>Давайте дружить, это выгодно!</p>
           <p class="discount">Скидка 10% для друзей из социальный сетей.</p>
           </section>
@@ -272,7 +276,7 @@
 
 
     <section class="modal">
-      <h2>Форма обратной связи</h2>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <h3>Напишите нам</h3>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="name">
