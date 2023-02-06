@@ -165,7 +165,7 @@ button{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-header-logo{
@@ -190,9 +190,11 @@ button{
   justify-content: space-between;
   align-items: center;
   column-gap: 45px;
+  margin-top: 26px;
 }
 
-.site-navigation-list a{
+.site-navigation-list a,
+.user-navigation a{
   padding-bottom: 13px;
 }
 
@@ -218,10 +220,7 @@ button{
 }
 
 .user-navigation{
-  align-self: center;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 25px;
+  margin-top: 26px;
 }
 
 .user-navigation .basket-link{
@@ -234,7 +233,7 @@ button{
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 7px;
+  top: 2px;
   left: 0;
   background-image: url("/img/icons/cart-icon.svg");
   background-repeat: no-repeat;
