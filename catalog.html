@@ -46,7 +46,6 @@
     <main class="container page-catalog">
       <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
-        <h3>Стоимость:</h3>
         <h3>Сортировать:</h3>
 
         <div class="sort-list-wrapper">
@@ -81,19 +80,28 @@
 
 
 
-
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter-form" method="get" action="https://echo.htmlacademy.ru/" oninput="result.value=parseInt(price.value)">
+        <form class="filter-form" method="get" action="https://echo.htmlacademy.ru/">
           <fieldset class="form-price-range">
-            <div class="range">
-              <input class="range" id="price" name="price" type="range" min="0" max="150000" value="0">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от<input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до<input type="text" name="max-price" value="150 000">
+                </label>
+              </div>
             </div>
-            <p class="filter-form-price">от
-              <output class="filter-form-output" name="result">0</output>
-              до
-              <output class="filter-form-output" name="result">150 000</output>
-            </p>
           </fieldset>
           <fieldset class="form-net">
             <legend>Сетка:</legend>
@@ -143,7 +151,6 @@
           <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <img class="card-browser" src="img/icons/browser.svg" width="360" height="40" alt="">
               <img class="card-img" src="img/card_sedona.jpg" width="358" height="578" alt="Карточка товара Sedona">
               <div class="modal-price">
                   <a href="#">Sedona</a>
@@ -152,7 +159,6 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img class="card-browser" src="img/icons/browser.svg" width="360" height="40" alt="">
               <img class="card-img" src="img/card_pink.jpg" width="358" height="578" alt="Карточка товара Pink">
               <div class="modal-price">
                   <a href="#">Pink App</a>
@@ -161,7 +167,6 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img class="card-browser" src="img/icons/browser.svg" width="360" height="40" alt="">
               <img class="card-img" src="img/card_borodinski.jpg" width="358" height="578" alt="Карточка товара BarberShop">
               <div class="modal-price">
                   <a href="#">Barbershop</a>
@@ -170,7 +175,6 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img class="card-browser" src="img/icons/browser.svg" width="360" height="40" alt="">
               <img class="card-img" src="img/card_mishka.jpg" width="358" height="578" alt="Карточка товара Mishka">
               <div class="modal-price">
                   <a href="#">Miska</a>
@@ -179,7 +183,6 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img class="card-browser" src="img/icons/browser.svg" width="360" height="40" alt="">
               <img class="card-img" src="img/card_aplus.jpg" width="358" height="578" alt="Карточка товара A Plus">
               <div class="modal-price">
                   <a href="#">A Plus</a>
@@ -188,7 +191,6 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img class="card-browser" src="img/icons/browser.svg" width="360" height="40" alt="">
               <img class="card-img" src="img/card_kvast.jpg" width="358" height="578" alt="Карточка товара Кваст">
               <div class="modal-price">
                   <a href="#">Кваст</a>
