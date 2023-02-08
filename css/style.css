@@ -246,7 +246,93 @@ button{
 
 /*Features*/
 
+.features{
+  width: 1157px;
+  margin: 0 auto;
+  position: relative;
+}
 
+.slider-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.slide{
+  display: none;
+}
+
+.slide-current{
+  display: grid;
+  grid-template-columns: 400px 760px;
+}
+
+
+
+.slider-item h3{
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: var(--basic-black);
+  margin-top: 78px;
+  margin-bottom: 25px;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.slider-item p{
+  margin-bottom: 38px;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.slider-button{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 50px;
+  cursor: pointer;
+  padding: 16px 54px;
+  vertical-align: middle;
+}
+
+.slider-item img{
+  width: 760px;
+  height: 431px;
+
+  grid-row: 1/4;
+  grid-column: 2/-1;
+}
+
+.slider-controls{
+  position: absolute;
+  left: 536px;
+  bottom: 96px;
+  z-index: 20;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
+.slider-controls button{
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.slider-controls .current{
+  outline: 2px solid var(--slider-gray);
+  outline-offset: -5px;
+}
+
+
+/*
 .features{
   width: 1157px;
   margin: 0 auto;
@@ -339,6 +425,8 @@ button{
   outline: 2px solid var(--slider-gray);
   outline-offset: -7px;
 }
+
+*/
 
 /*Container*/
 .container{
@@ -1035,6 +1123,10 @@ input:focus::-webkit-input-placeholder{
   margin-right: 18px;
 }
 
+.up-down .sort-item-up{
+  transform: rotate(180deg);
+}
+
 .sort-item button{
 text-transform: uppercase;
 font-size: 14px;
@@ -1045,11 +1137,15 @@ background-color: inherit;
 opacity: 0.3;
 }
 
+.sort-item .active{
+  opacity: 1;
+}
+
 .sort-item:nth-child(4){
   margin-left: 0px;
 }
 
-.sort-item button:hover{
+.sort-item button:hover:not(.active){
   opacity: 0.6;
 }
 
@@ -1180,14 +1276,102 @@ opacity: 0.3;
   margin-bottom: 47px;
 }
 
-.filter-form .form-peculiarities{
-  margin-bottom: 50px;
+.filter-item label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-net label,
+.form-peculiarities label{
+  padding-left: 36px;
+}
+
+.filter-input-radio + label::before{
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  top:-2px;
+  background-color: var(--basic-white);
+  border: 4px solid var(--radio-gray);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::after{
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: var(--radio-gray);
+  border-radius: 50%;
+  left: 8px;
+  top: 6px;
+  opacity: 0.4;
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:hover + label::after,
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:checked:hover + label::after{
+  opacity: 1;
+}
+
+.filter-input-radio:focus + label::before,
+.filter-input-radio:focus + label::after,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:checked:focus + label::after{
+  opacity: 1;
+}
+
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label::after,
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label::after{
+  opacity: 0.1;
+}
+
+.filter-form input:disabled+label{
+  opacity: 0.3;
 }
 
 
 
-.filter-form input:disabled+label{
-  opacity: 0.3;
+.filter-form .form-peculiarities{
+  margin-bottom: 50px;
+}
+
+.filter-input-checkbox + label::before{
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 0;
+  top:-1px;
+  background-color: var(--basic-white);
+  border: 2px solid var(--radio-gray);
+  border-radius: 3px;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked + label::before{
+  opacity: 0;
+}
+
+.filter-input-checkbox:checked + label::after{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/icons/checkbox_on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: -1px;
+  opacity: 0.4;
 }
 
 .filter-button{

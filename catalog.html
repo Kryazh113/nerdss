@@ -52,7 +52,7 @@
 
         <ul class="sort-list">
           <li class="sort-item">
-            <button type="button">По цене</button>
+            <button class="active" type="button">По цене</button>
           </li>
           <li class="sort-item">
             <button type="button">По типу</button>
@@ -64,13 +64,13 @@
 
         <ul class="up-down">
           <li class="sort-item sort-item-down">
-            <button type="button">
+            <button class="active" type="button">
               <img src="img/icons/icon_down_dir.svg" width="11" height="10" alt="">
             </button>
           </li>
           <li class="sort-item sort-item-up">
             <button type="button">
-              <img src="img/icons/icon_up_dir.svg" width="11" height="10" alt="">
+              <img src="img/icons/icon_down_dir.svg" width="11" height="10" alt="">
             </button>
           </li>
         </ul>
@@ -106,38 +106,38 @@
           <fieldset class="form-net">
             <legend>Сетка:</legend>
             <p class="filter-item">
-              <input type="radio" name="net" value="adaptive" id="form-adaptive" checked>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" value="adaptive" id="form-adaptive" checked>
               <label for="form-adaptive">Адаптивная</label><br>
             </p>
             <p class="filter-item">
-              <input type="radio" name="net" value="fixed" id="form-fixed">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" value="fixed" id="form-fixed">
               <label for="form-fixed">Фиксированная</label><br>
             </p>
             <p class="filter-item">
-              <input type="radio" name="net" value="rubber" id="form-rubber">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" value="rubber" id="form-rubber">
               <label for="form-rubber">Резиновая</label>
             </p>
           </fieldset>
           <fieldset class="form-peculiarities">
             <legend>Особенности:</legend>
             <p class="filter-item">
-              <input type="checkbox" name="slider" id="form-slider" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="form-slider" checked>
               <label for="form-slider">Слайдер</label><br>
             </p>
             <p class="filter-item">
-              <input type="checkbox" name="advantage-block" id="form-advantage-block">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="form-advantage-block">
               <label for="form-advantage-block">Блок преимуществ</label><br>
             </p>
             <p class="filter-item">
-              <input type="checkbox" name="news" id="form-news" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="form-news" checked>
               <label for="form-news">Новости</label><br>
             </p>
             <p class="filter-item">
-              <input type="checkbox" name="gallery" id="form-gallery">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="form-gallery">
               <label for="form-gallery">Галерея</label><br>
             </p>
             <p class="filter-item">
-              <input type="checkbox" name="basket" id="form-basket">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="form-basket">
               <label for="form-basket">Корзина</label>
             </p>
           </fieldset>
