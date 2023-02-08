@@ -237,7 +237,7 @@ button{
   height: 15px;
   top: 2px;
   left: 0;
-  background-image: url("/img/icons/cart-icon.svg");
+  background-image: url("../img/icons/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -1258,7 +1258,7 @@ opacity: 0.3;
   width: 360px;
   height: 40px;
   top:-40px;
-  background-image: url("/img/icons/browser.svg");
+  background-image: url("../img/icons/browser.svg");
   opacity: 12%;
   background-repeat: no-repeat;
   background-position: 0 0;
