@@ -314,7 +314,7 @@ button{
 
 .slider-controls{
   position: absolute;
-  left: 536px;
+  left: 540px;
   bottom: 96px;
   z-index: 20;
   display: flex;
