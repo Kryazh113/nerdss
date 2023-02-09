@@ -276,6 +276,9 @@ button{
   font-weight: 500;
   line-height: 55px;
   color: var(--basic-black);
+  max-width: 538px;
+  padding: 0;
+  margin: 0px;
   margin-top: 78px;
   margin-bottom: 25px;
   grid-column: 1/-1;
@@ -283,6 +286,8 @@ button{
 }
 
 .slider-item p{
+  margin: 0;
+  padding: 0;
   margin-bottom: 38px;
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -295,6 +300,7 @@ button{
   height: 50px;
   cursor: pointer;
   padding: 16px 54px;
+  margin-bottom: 80px;
   vertical-align: middle;
 }
 
