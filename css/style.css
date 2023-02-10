@@ -145,19 +145,19 @@ button{
 
 
 .main-header{
-  background-color: var(--basic-gray);
   margin-bottom: 80px;
+  background-color: var(--basic-gray);
 }
 
 .main-header h1{
+  margin: 0;
+  margin-bottom: 108px;
+  padding: 0;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: var(--basic-black);
-  margin: 0;
-  padding: 0;
   text-align: center;
-  margin-bottom: 108px;
 }
 
 .main-navigation{
@@ -190,10 +190,10 @@ button{
 }
 
 .site-navigation{
-  padding: 0;
   margin: 0;
   margin-right: 244px;
   margin-top: 26px;
+  padding: 0;
   list-style: none;
 
   display: flex;
@@ -264,9 +264,9 @@ button{
 
 
 .features{
-  width: 1157px;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
+  width: 1157px;
 }
 
 .slider-list{
@@ -285,10 +285,10 @@ button{
 }
 
 .slider-item h3{
-  padding: 0;
   margin: 0px;
   margin-top: 78px;
   margin-bottom: 25px;
+  padding: 0;
   max-width: 538px;
   font-size: 55px;
   font-weight: 500;
@@ -306,8 +306,8 @@ button{
 
 .slider-item p{
   margin: 0;
-  padding: 0;
   margin-bottom: 38px;
+  padding: 0;
 
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -319,8 +319,8 @@ button{
 }
 
 .slider-button{
-  padding-top: 17px;
   margin-bottom: 80px;
+  padding-top: 17px;
   display: inline-block;
   box-sizing: border-box;
   width: 240px;
@@ -503,9 +503,9 @@ button{
 
 .intro{
   margin: 0;
-  padding: 0;
   margin-top: 34px;
   margin-bottom: 32px;
+  padding: 0;
 
   font-size: 45px;
   line-height: 45px;
@@ -567,9 +567,9 @@ button{
 }
 
 .statistic img{
+  margin-bottom: 33px;
   width: 360px;
   height: 208px;
-  margin-bottom: 33px;
 }
 
 .table-caption{
@@ -726,9 +726,9 @@ button{
 }
 
 .map-contacts h3{
-  padding: 0;
   margin: 0;
   margin-bottom: 23px;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -960,9 +960,9 @@ input:focus::-webkit-input-placeholder{
 }
 
 .login-form .button{
-  padding: 0;
   margin: 0;
   margin-top: 13px;
+  padding: 0;
   width: 259px;
   height: 50px;
 }
@@ -1070,13 +1070,13 @@ input:focus::-webkit-input-placeholder{
 }
 
 .sort-item button{
-font-size: 14px;
-line-height: 18px;
-color: var(--basic-black);
-text-transform: uppercase;
-border: none;
-background-color: inherit;
-opacity: 0.3;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+  opacity: 0.3;
 }
 
 .sort-item button:hover{
