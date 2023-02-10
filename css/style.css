@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"),
-    url("/fonts/roboto.woff2") format("woff2"),
-    url("/fonts/roboto.woff") format("woff");
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
 }
 
 @font-face{
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 500;
   src: local("Roboto"),
-    url("/fonts/robotomedium.woff2") format("woff2"),
-    url("/fonts/robotomedium.woff") format("woff");
+    url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
 }
 
 @font-face{
@@ -22,8 +22,8 @@
   font-style: normal;
   font-weight: 700;
   src: local("Roboto"),
-    url("/fonts/robotobold.woff2") format("woff2"),
-    url("/fonts/robotobold.woff") format("woff");
+    url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
 }
 
 /* Variables*/
@@ -513,7 +513,7 @@ button{
 
 .option{
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   padding: 0;
   text-transform: uppercase;
   font-weight: 700;
@@ -530,7 +530,7 @@ button{
 }
 
 .option-item{
-  padding-left: 32px;
+  padding-left: 36px;
   position: relative;
 }
 
@@ -560,7 +560,7 @@ button{
 .statistic img{
   width: 360px;
   height: 208px;
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 }
 
 .statistic-table{
@@ -1086,20 +1086,18 @@ background-color: inherit;
 opacity: 0.3;
 }
 
-.sort-item .active{
-  opacity: 1;
-}
-
 .sort-item:nth-child(4){
   margin-left: 0px;
 }
 
-.sort-item button:hover:not(.active){
+.sort-item button:hover{
   opacity: 0.6;
 }
 
+
+
 .sort-item button:focus,
-.services-item button:active{
+.sort-item button:active{
   opacity: 1;
 }
 
