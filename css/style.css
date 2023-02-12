@@ -305,6 +305,7 @@ button{
 }
 
 .slider-item p{
+  max-width: 416px;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
@@ -393,14 +394,19 @@ button{
   width: 1100px;
   min-height: 347px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  display: flex;
 }
 
 .services-item{
+  width: 300px;
+  margin-right: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-item:last-child{
+  margin: 0;
 }
 
 .services-item img{
@@ -500,6 +506,9 @@ button{
 
 /*About*/
 
+.about{
+  max-width: 650px;
+}
 
 .intro{
   margin: 0;
@@ -559,15 +568,10 @@ button{
 .statistic{
   width: 360px;
   margin-right: 14px;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .statistic img{
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   width: 360px;
   height: 208px;
 }
@@ -629,6 +633,7 @@ button{
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .clients-item:first-child,
@@ -784,6 +789,7 @@ button{
 .social-item {
   width: 81px;
   height: 81px;
+  margin-bottom: 10px;
   background-color: var(--social-gray);
   border-radius: 50%;
 }
@@ -842,7 +848,7 @@ button{
 .modal{
   position: fixed;
   right: 0;
-  bottom: 180px;
+  bottom: 190px;
   left: 16px;
   margin: auto;
 
@@ -1039,7 +1045,7 @@ input:focus::-webkit-input-placeholder{
   display: grid;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   grid-template-areas: "filter sort sort"
                        "filter catalog catalog"
                        ". pagination pagination";
@@ -1527,7 +1533,8 @@ input:focus::-webkit-input-placeholder{
   flex-wrap: wrap;
 }
 
-.pagination-item:not(.last){
+.pagination-item{
+  margin-bottom: 11px;
   margin-right: 11px;
 }
 
