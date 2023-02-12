@@ -839,14 +839,20 @@ button{
 
 
 .modal{
-  margin: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 180px;
+  left: 0;
+  margin: auto;
 
   width: 960px;
-  min-height: 590px;
+  background-color: var(--basic-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 
   display: flex;
   flex-wrap: wrap;
+
+
 }
 
 .not-active{
@@ -968,24 +974,35 @@ input:focus::-webkit-input-placeholder{
 }
 
 .modal-close{
-  margin-top: 78px;
-  margin-left:auto;
-  margin-right: 90px;
-  padding: 0;
+  position: absolute;
+  top: 78px;
+  right: 90px;
   width: 21px;
   height: 21px;
   border: none;
   background-color: var(--basic-white);
-  opacity: 0.3;
 
-  order: 1;
 }
 
-.modal-close:hover{
+.modal-close::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 21px;
+  height: 21px;
+
+  background-image: url("../img/icons/close_button.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+}
+
+.modal-close:hover::after{
   opacity: 1;
 }
 
-.modal-close:focus{
+.modal-close:focus::after{
   opacity: 0.1;
 }
 
