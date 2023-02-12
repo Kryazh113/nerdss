@@ -173,12 +173,12 @@ button{
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .main-header-logo{
   width: 160px;
   height: 65px;
-  margin-right: 202px;
 }
 
 .main-header-logo:hover{
@@ -191,7 +191,7 @@ button{
 
 .site-navigation{
   margin: 0;
-  margin-right: 244px;
+  margin-right: 45px;
   margin-top: 26px;
   padding: 0;
   list-style: none;
