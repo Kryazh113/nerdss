@@ -695,14 +695,6 @@ button{
 /*footer*/
 
 
-.main-footer{
-  margin-bottom: 68px;
-}
-
-.main-footer-catalog{
-  margin-bottom: 76px;
-}
-
 .footer-contacts{
   position: relative;
   margin-bottom: 68px;
@@ -777,6 +769,7 @@ button{
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 140px;
+
 }
 
 .social-list{
@@ -852,7 +845,7 @@ button{
 .modal{
   position: fixed;
   right: 0;
-  bottom: 190px;
+  bottom: 180px;
   left: 16px;
   margin: auto;
 
