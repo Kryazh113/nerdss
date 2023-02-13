@@ -162,7 +162,7 @@ button{
 
 .main-navigation{
   width: 1160px;
-  margin: 49px auto 0px auto;
+  margin: 48px auto 0px auto;
   padding: 0;
   font-size: inherit;
   line-height: 30px;
@@ -191,19 +191,23 @@ button{
 
 .site-navigation{
   margin: 0;
-  margin-right: 45px;
-  margin-top: 26px;
+  margin-right: 44px;
+  margin-top: 16px;
   padding: 0;
   list-style: none;
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
 
+.site-navigation-list{
+  display: inline-block;
+  padding: 10px;
 }
 
 .site-navigation-list:not(:last-child){
-  margin-right: 45px;
+  margin-right: 25px;
 }
 
 .site-navigation-list a,
@@ -305,6 +309,7 @@ button{
 }
 
 .slider-item p{
+  max-width: 416px;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
@@ -320,11 +325,11 @@ button{
 
 .slider-button{
   margin-bottom: 80px;
-  padding-top: 17px;
+  padding: 17px 10px;
   display: inline-block;
   box-sizing: border-box;
   width: 240px;
-  height: 50px;
+  min-height: 50px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -393,14 +398,19 @@ button{
   width: 1100px;
   min-height: 347px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  display: flex;
 }
 
 .services-item{
+  width: 300px;
+  margin-right: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-item:last-child{
+  margin: 0;
 }
 
 .services-item img{
@@ -428,7 +438,7 @@ button{
   display: inline-block;
   padding-top: 17px;
   width: 160px;
-  height: 50px;
+  min-height: 50px;
   box-sizing: border-box;
   color: var(--basic-white);
   line-height: 18px;
@@ -500,6 +510,9 @@ button{
 
 /*About*/
 
+.about{
+  max-width: 650px;
+}
 
 .intro{
   margin: 0;
@@ -559,15 +572,10 @@ button{
 .statistic{
   width: 360px;
   margin-right: 14px;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .statistic img{
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   width: 360px;
   height: 208px;
 }
@@ -629,6 +637,7 @@ button{
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .clients-item:first-child,
@@ -784,6 +793,7 @@ button{
 .social-item {
   width: 81px;
   height: 81px;
+  margin-bottom: 10px;
   background-color: var(--social-gray);
   border-radius: 50%;
 }
@@ -842,7 +852,7 @@ button{
 .modal{
   position: fixed;
   right: 0;
-  bottom: 180px;
+  bottom: 190px;
   left: 16px;
   margin: auto;
 
@@ -863,54 +873,52 @@ button{
 .modal h3{
   margin-top: 63px;
   margin-left: 100px;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
   max-width: 738px;
   font-size: 45px;
   line-height: 53px;
   font-weight: 700;
   color: var(--basic-black);
 
-  order: 1;
+
 }
 
 .login-form{
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 84px;
-  height: 353px;
+  margin-bottom: 85px;
 
-  display: grid;
-  grid-template-columns: 360px 360px;
-  grid-template-rows: 77px 145px 50px;
-  column-gap: 40px;
-  row-gap: 34px;
-  order: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 
 .login-form p{
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
 .login-form .name{
-  grid-column: 1/2;
+  flex-grow: 1;
+  margin-right: 40px;
 }
 
 .login-form .email{
-  grid-column: 2/3;
+  flex-grow: 1;
 }
 
 .login-form .comment{
-  grid-column: 1/-1;
-  grid-row: 2/3;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
-.login-form .button{
-  grid-column: 1/2;
-  grid-row: -2/-1;
-}
+
 
 .login-form label{
+  display: inline-block;
+  margin-bottom: 9px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -968,10 +976,9 @@ input:focus::-webkit-input-placeholder{
 
 .login-form .button{
   margin: 0;
-  margin-top: 13px;
-  padding: 0;
-  width: 259px;
-  height: 50px;
+  padding: 10px;
+  min-width: 259px;
+  min-height: 50px;
 }
 
 .modal-close{
@@ -1039,7 +1046,7 @@ input:focus::-webkit-input-placeholder{
   display: grid;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   grid-template-areas: "filter sort sort"
                        "filter catalog catalog"
                        ". pagination pagination";
@@ -1389,7 +1396,7 @@ input:focus::-webkit-input-placeholder{
 
   display: grid;
   grid-template-columns: 360px 360px;
-  column-gap: 42px;
+  column-gap: 40px;
   row-gap: 72px;
 }
 
@@ -1443,7 +1450,7 @@ input:focus::-webkit-input-placeholder{
   position: absolute;
   bottom: 0;
   width: 360px;
-  height: 231px;
+  min-height: 230px;
   font: inherit;
   line-height: 18px;
   text-align: center;
@@ -1483,14 +1490,16 @@ input:focus::-webkit-input-placeholder{
 
 .modal-price p{
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
+  padding: 0 10px;
 }
 
 .modal-price .button-price{
   margin-top: 0;
-  margin-bottom: 44px;
-  width: 200px;
-  height: 50px;
+  margin-bottom: 40px;
+  padding: 10px;
+  min-width: 200px;
+  min-height: 50px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1527,7 +1536,8 @@ input:focus::-webkit-input-placeholder{
   flex-wrap: wrap;
 }
 
-.pagination-item:not(.last){
+.pagination-item{
+  margin-bottom: 11px;
   margin-right: 11px;
 }
 
