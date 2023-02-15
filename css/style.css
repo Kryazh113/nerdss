@@ -338,6 +338,7 @@ button{
 .slider-item img{
   width: 760px;
   height: 431px;
+  object-fit: contain;
 
   grid-row: 1/4;
   grid-column: 2/-1;
@@ -696,7 +697,6 @@ button{
 
 
 .footer-contacts{
-  position: relative;
   margin-bottom: 68px;
   height: 416px;
 }
@@ -707,13 +707,20 @@ button{
 
 .map iframe{
   border: none;
-  width: 100vw;
+  width: 100%;
+}
+
+.contacts-wrapper{
+  position: relative;
+
 }
 
 .map-contacts{
-  position: relative;
-  right: 420px;
-  bottom: 370px;
+  position: absolute;
+  padding:49px 50px 47px;
+  box-sizing: border-box;
+
+  bottom: 61px;
   width: 319px;
   min-height: 308px;
   background-color: var(--basic-white);
@@ -723,9 +730,6 @@ button{
   flex-direction: column;
 }
 
-.map-contacts-wrapper{
-  padding:49px 50px 47px;
-}
 
 .map-contacts h3{
   margin: 0;
@@ -756,9 +760,9 @@ button{
 
 .modal-button{
   margin: 0;
-  padding: 0;
+  padding: 10px;
   width: 219px;
-  height: 50px;
+  min-height: 50px;
 }
 
 
@@ -844,10 +848,8 @@ button{
 
 .modal{
   position: fixed;
-  right: 0;
-  bottom: 180px;
-  left: 16px;
-  margin: auto;
+  inset: auto 240px 180px 240px;
+  margin: 0 auto;
 
   width: 960px;
   background-color: var(--basic-white);
@@ -1245,7 +1247,7 @@ input:focus::-webkit-input-placeholder{
 }
 
 .filter-form .form-net{
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .filter-item label{
@@ -1432,6 +1434,7 @@ input:focus::-webkit-input-placeholder{
 .card-img{
   width: 360px;
   height: 578px;
+  object-fit: contain;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   outline: 1px solid var(--catalog-border-gray);
