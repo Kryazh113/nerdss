@@ -203,6 +203,7 @@ button{
 
 .site-navigation-list{
   display: inline-block;
+  vertical-align: middle;
   padding: 10px;
 }
 
@@ -327,6 +328,7 @@ button{
   margin-bottom: 80px;
   padding: 17px 10px;
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   width: 240px;
   min-height: 50px;
@@ -437,6 +439,7 @@ button{
 
 .order{
   display: inline-block;
+  vertical-align: middle;
   padding-top: 17px;
   width: 160px;
   min-height: 50px;
@@ -919,6 +922,7 @@ button{
 
 .login-form label{
   display: inline-block;
+  vertical-align: middle;
   margin-bottom: 9px;
   font-size: 16px;
   line-height: 18px;
@@ -1559,7 +1563,7 @@ input:focus::-webkit-input-placeholder{
 
 .pagination-button span{
   display: inline-block;
-  padding-top: 8px;
+  vertical-align: middle;
 }
 
 .last .pagination-button{
@@ -1584,5 +1588,3 @@ input:focus::-webkit-input-placeholder{
   outline: 3px solid var(--active-border);
   outline-offset: -3px;
 }
-
-
