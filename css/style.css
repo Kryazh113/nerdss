@@ -348,7 +348,7 @@ button{
   position: absolute;
   left: 536px;
   bottom: 96px;
-  z-index: 20;
+  z-index: 2;
   width: 88px;
 
   display: flex;
@@ -595,7 +595,7 @@ button{
   padding: 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .statistic-table dt{
@@ -697,7 +697,6 @@ button{
 
 
 .footer-contacts{
-  margin-bottom: 68px;
   height: 416px;
 }
 
@@ -770,6 +769,7 @@ button{
 
 
 .footer-wrapper{
+  padding: 68px 0;
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 140px;
@@ -848,10 +848,16 @@ button{
 
 .modal{
   position: fixed;
-  inset: auto 240px 180px 240px;
-  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  z-index: 3;
 
   width: 960px;
+  height: 590px;
   background-color: var(--basic-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 
@@ -1056,7 +1062,7 @@ input:focus::-webkit-input-placeholder{
   margin-bottom: 88px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   column-gap: 42px;
 }
 
