@@ -1099,22 +1099,21 @@ input:focus::-webkit-input-placeholder{
   margin-right: 25px;
 }
 
-.sort-item button{
+.sort-item a{
+  text-decoration: none;
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
-  border: none;
-  background-color: inherit;
   opacity: 0.3;
 }
 
-.sort-item button:hover{
+.sort-item a:hover{
   opacity: 0.6;
 }
 
-.sort-item button:focus,
-.sort-item button:active{
+.sort-item a:focus,
+.sort-item a:active{
   opacity: 1;
 }
 
@@ -1452,7 +1451,7 @@ input:focus::-webkit-input-placeholder{
 }
 
 .modal-price{
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   bottom: 0;
   width: 360px;
@@ -1471,10 +1470,11 @@ input:focus::-webkit-input-placeholder{
 }
 
 .catalog-item:hover .modal-price{
-  visibility: visible;
+  opacity: 1;
 }
 
-.modal-price a{
+.card-name{
+  padding: 0 10px;
   margin-top: 26px;
   margin-bottom: 12px;
   font-size: 18px;
@@ -1485,13 +1485,17 @@ input:focus::-webkit-input-placeholder{
   text-decoration: none;
 }
 
-.modal-price a:hover{
+.card-name:hover{
   color: var(--basic-red);
 }
 
-.modal-price a:focus{
+.card-name:focus{
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+.modal-price:focus-within{
+  opacity:1;
 }
 
 .modal-price p{
@@ -1501,10 +1505,11 @@ input:focus::-webkit-input-placeholder{
 }
 
 .modal-price .button-price{
+  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 40px;
-  padding: 10px;
-  min-width: 200px;
+  padding: 17px 10px;
+  width: 200px;
   min-height: 50px;
   font-size: 16px;
   line-height: 18px;
@@ -1512,7 +1517,7 @@ input:focus::-webkit-input-placeholder{
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-transform: uppercase;
-  border: none;
+  text-decoration: none;
   border-radius: 3px;
 
   align-self: center;
@@ -1520,9 +1525,11 @@ input:focus::-webkit-input-placeholder{
 
 .modal-price .button-price:hover{
   background-color: var(--medium-red);
+  color: var(--basic-white);
 }
 
 .modal-price .button-price:focus{
+  color: var(--basic-white);
   background-color: var(--dark-red);
   box-shadow:inset 0 3px 0 var(--button-shadow);
 }
