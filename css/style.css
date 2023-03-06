@@ -1393,6 +1393,7 @@ input:focus::-webkit-input-placeholder{
 .catalog{
   grid-area: catalog;
   margin-bottom: 55px;
+ 
 }
 
 .catalog-list{
@@ -1537,17 +1538,20 @@ input:focus::-webkit-input-placeholder{
 }
 
 .catalog-modal{
-  position: sticky;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+
   margin: auto;
+  z-index: 3;
 
   width: 500px;
   height: 400px;
   background-color: var(--basic-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
   display: none;
 }
 

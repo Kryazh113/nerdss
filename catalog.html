@@ -5,7 +5,7 @@
     <title>Дизайн-студия Нёрдс</title>
     <link rel="styleseet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/fav/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/fav/180.png">
@@ -146,7 +146,7 @@
           <li class="catalog-item">
             <img class="card-img" src="img/card_sedona.jpg" width="358" height="578" alt="Карточка товара Sedona">
             <div class="modal-price">
-              <a class="card-name" href="#">Sedona</a>
+              <a class="card-name" href="#open">Sedona</a>
               <p>Информационный сайт<br> для туристов</p>
               <a href="#" class="button-price" aria-label="Добавить шаблон сайта Sedona в корзину">9 900 <span>&#8381;</span></a>
             </div>
@@ -154,7 +154,7 @@
           <li class="catalog-item">
             <img class="card-img" src="img/card_pink.jpg" width="358" height="578" alt="Карточка товара Pink">
             <div class="modal-price">
-              <a class="card-name" href="#">Pink App</a>
+              <a class="card-name" href="#open">Pink App</a>
               <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
               <a href="#" class="button-price" aria-label="Добавить шаблон сайта Pink в корзину">9 900 <span>&#8381;</span></a>
             </div>
@@ -162,7 +162,7 @@
           <li class="catalog-item">
             <img class="card-img" src="img/card_borodinski.jpg" width="358" height="578" alt="Карточка товара BarberShop">
             <div class="modal-price">
-              <a class="card-name" href="#">Barbershop</a>
+              <a class="card-name" href="#open">Barbershop</a>
               <p>Сайт салона красоты.<br> Для мужчин, да.</p>
               <a href="#" class="button-price" aria-label="Добавить шаблон сайта BarberShop в корзину">9 900 <span>&#8381;</span></a>
             </div>
@@ -170,7 +170,7 @@
           <li class="catalog-item">
             <img class="card-img" src="img/card_mishka.jpg" width="358" height="578" alt="Карточка товара Mishka">
             <div class="modal-price">
-              <a class="card-name" href="#">Mishka</a>
+              <a class="card-name" href="#open">Mishka</a>
               <p>Интернет-магазин<br> вязаных игрушек</p>
               <a href="#" class="button-price" aria-label="Добавить шаблон сайта Mishka в корзину">9 900 <span>&#8381;</span></a>
             </div>
@@ -178,7 +178,7 @@
           <li class="catalog-item">
             <img class="card-img" src="img/card_aplus.jpg" width="358" height="578" alt="Карточка товара A Plus">
             <div class="modal-price">
-              <a class="card-name" href="#">A Plus</a>
+              <a class="card-name" href="#open">A Plus</a>
               <p>Лендинг курсов повышения<br> квалификации</p>
               <a href="#" class="button-price" aria-label="Добавить шаблон сайта A Plus в корзину">9 900 <span>&#8381;</span></a>
             </div>
@@ -186,16 +186,13 @@
           <li class="catalog-item">
             <img class="card-img" src="img/card_kvast.jpg" width="358" height="578" alt="Карточка товара Кваст">
             <div class="modal-price">
-              <a class="card-name" href="#">Кваст</a>
+              <a class="card-name" href="#open">Кваст</a>
               <p>Промо-сайт производителя<br> крафтового кваса</p>
               <a href="#" class="button-price" aria-label="Добавить шаблон сайта Кваст в корзину">9 900 <span>&#8381;</span></a>
             </div>
           </li>
         </ul>
-        <div class="catalog-modal">
-          <p>Привет, я модальное окно с демонстрацией товара!</p>
-          <button class="catalog-modal-close" type="button">Закрыть</button>
-        </div>
+       
       </section>
 
 
@@ -275,6 +272,10 @@
     </footer>
 
 
+    <section class="catalog-modal" id="#open">
+      <p>Привет, я модальное окно с демонстрацией товара!</p>
+      <button class="catalog-modal-close" type="button">Закрыть</button>
+    </section>
 
     <section class="modal">
       <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -299,7 +300,7 @@
     </section>
 
     <script src="js/modal.min.js"></script>
-    <script src="js/catalog-modal.js"></script>
+    <script src="js/catalog-modal.min.js"></script>
 
   </body>
 </html>
